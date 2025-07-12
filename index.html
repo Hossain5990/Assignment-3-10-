@@ -7,11 +7,85 @@
     <!-- DaisyUi Setup -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Manrope Font-family -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+   <style>
+    .manrope-font{
+          font-family: "Manrope", sans-serif;
+    }
+   </style>
 </head>
-<body>
+<body class="manrope-font ">
 
     <!-- Header Section -->
-     <Header>
+     <Header class="container mx-auto ">
+<!--  nav bar -->
+        <nav class="mt-16">
+            <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a class="text-base font-extrabold text-slate-600">Home</a></li>
+        <li><a class="text-base font-normal text-slate-400">Services</a></li>
+         <li><a class="text-base font-normal text-slate-400">Portfolio</a></li>
+          <li><a class="text-base font-normal text-slate-400">Blogs</a></li>
+           <li><a class="text-base font-normal text-slate-400">Contact uss</a></li>
+      </ul>
+    </div>
+    <div class="flex items-center gap-2">
+      <img class="bg-green-500 rounded-full p-2" src="./assets/Group 1.svg" alt="">
+      <a class="text-3xl font-extrabold text-black">Rinterio</a>
+    </div>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+     <li><a class="text-base font-extrabold text-slate-600">Home</a></li>
+        <li><a class="text-base font-normal text-slate-400">Services</a></li>
+         <li><a class="text-base font-normal text-slate-400">Portfolio</a></li>
+          <li><a class="text-base font-normal text-slate-400">Blogs</a></li>
+           <li><a class="text-base font-normal text-slate-400">Contact uss</a></li>
+    </ul>
+  </div>
+  
+    <div class="navbar-end gap-2 hidden md:flex">
+  <img class="bg-white rounded-full p-2 border border-slate-500" src="./assets/search-01.svg" alt="">
+  <img class="bg-white rounded-full p-2 border border-slate-500" src="./assets/shopping-cart-01.svg" alt="">
+  <a class="btn text-xl font-extrabold text-black bg-green-500 rounded-3xl py-6">
+    Book Consult
+    <span>
+      <img class="bg-black rounded-full p-2 text-white" src="./assets/group2.svg" alt="">
+    </span>
+  </a>
+</div>
+
+  
+</div>
+        </nav>
+
+        <!-- banner part -->
+         <div class="flex flex-col items-center my-20">
+          <div class="mb-5">
+            <img src="./assets/banner.png" alt="">
+          </div>
+          <div class="space-y-6 text-center">
+      <h1 class="text-4xl lg:text-6xl font-extrabold text-black">A barn house of this design has a striking appearance</h1>
+      <p class="text-base font-medium text-slate-500">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+       <a class="btn text-xl font-extrabold text-black bg-green-300 rounded-3xl py-6">
+    View Details
+    <span>
+      <img class="bg-black rounded-full p-2 text-white" src="./assets/group2.svg" alt="">
+    </span>
+  </a>
+          </div>
+
+         </div>
 
      </Header>
 
